@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="covid.css">
+        <link rel="stylesheet" href="java.css">
+        <link rel="shortcut icon" href="covid19.ico">
+        <title>Info Covid</title>
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="inicio.html">Início</a>
+            <a href="imc.html">Imc</a>
+            <a href="covid.html">Covid-19</a>
+            <a href="numeros.html">Calculadora</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>
+        <script>
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+        
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+        <fieldset> <h2><legend> Informações Sobre a COVID-19 </legend></h2>
+            <form methodod="GET" action="covid.php"> 
+                <input type="radio" id="opcao" name="opcao" value="1">
+                <label for="info">O que é a covid-19?</label><br>
+                <input type="radio" id="opcao" name="opcao" value="2">
+                <label for="transmissao">Transmissão do Vírus</label><br>
+                <input type="radio" id="opcao" name="opcao" value="3">
+                <label for="sintomas">Sintomas</label>
+                <input type="radio" id="opcao" name="opcao" value="4">
+                <label for="prevencao">Prevenção</label> <br> <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </fieldset>
+    </body>
+</html>

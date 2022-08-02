@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calculadora.css">
+        <link rel="stylesheet" href="java.css">
+        <link rel="shortcut icon" href="numeros.ico">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="inicio.html">Início</a>
+            <a href="imc.html">Imc</a>
+            <a href="covid.html">Covid-19</a>
+            <a href="numeros.html">Calculadora</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>
+        <script>
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+        
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+        <div id="titulo">
+            <fieldset>
+                <h1>Calculadora Par-Ímpar</h1>
+                <p>A calculadora abaixo irá mostrar ao usuário, a partir do valor inserido, quais serão os numeros pares e ímpares que antecedem este valor.</P> 
+            </fieldset>
+        </div>
+        <div id="formulario">
+            <fieldset> 
+                <form action="numeros.php" method="post">
+                    <label for="name">Digite aqui o seu nome:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="number">Número:</label>
+                    <input type="number" id="num" name="num"> <br> <br>
+                    <input type="radio" id="par" name="n" value="1">
+                    <label for="par">Gerar Pares</label><br>
+                    <input type="radio" id="impar" name="n" value="2">
+                    <label for="impar">Gerar Ímpares</label><br><br>
+                    <button type="submit" name="enviar"> Enviar </button>
+                </form>
+            </fieldset>
+        </div>         
+    </body>
+</html>
+

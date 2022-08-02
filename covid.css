@@ -1,0 +1,47 @@
+body{
+  background-color: #F2E3D5;
+  color: black;
+  font-family: monospace;
+  font-size: large;
+  text-align: center;
+}
+#form { display: inline-block; width: 500px; height: 400px; padding-top: 190px;
+}
+#topic{ display: inline-block; width: 400px; height: 800px;
+}
+input[type=text], input[type=number]{
+  width: 100%;
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+h2{
+color: black;
+}
+h3{
+color: #026773;
+}
+p{
+  background-color: #026773;
+}
+fieldset{
+  display: block;
+  border: 2px solid black;
+  margin-top: 40px;
+  margin-left: 400px;
+  margin-right: 100px;
+  border-radius: 40px;
+}
+legend{
+  color: #012E40;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+ul{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+

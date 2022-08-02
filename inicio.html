@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="inicios.css">
+        <link rel="stylesheet" href="java.css">
+        <link rel="shortcut icon" href="inicio1.ico">
+        <title>Página Inicial</title>
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="inicio.html">Início</a>
+            <a href="imc.html">Imc</a>
+            <a href="covid.html">Covid-19</a>
+            <a href="numeros.html">Calculadora</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>
+        <script>
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+        
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+        </script>
+        <fieldset><legend> Página Inicial</legend>
+            <h1>Bem vindo ao Zalli</h1>
+            <p> Neste site, o usuário irá conseguir fazer diversas consultas, como:
+            Seu IMC, Informações sobre a COVID-19 e o usuário também conseguirá pesquisar números pares e ímpares de acordo com o numero inserido.</p>
+            <p> Navegue através da barra ao lado ou faça suas pesquisas clicando nos ícones abaixo</p>
+        </fieldset>
+        <div id="geral">
+            <div id="imagem1"> <h1><legend>Calculo IMC</legend></h1>
+                <a href="imc.html"><img src="body.png"></a>
+            </div>
+            <div id="imagem2"> <h1><legend>Informações da COVID-19</legend></h1>
+                <a href="covid.html"><img src="covid19.png"></a>
+            </div>
+            <div id="imagem3">  <h1><legend> Calculadora Par-Ímpar</legend></h1>
+                <a href="numeros.html"><img src="numeros.png"></a>
+            </div>
+        </div>
+        <h6>Feito Por: João Pedro G Viana - Zalli</h6>
+    </body>
+</html>
